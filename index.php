@@ -32,6 +32,25 @@
         </div>
 
         <div class="row">
+            <div class="col-12">
+                <form action="./db/post.php">
+                    <h3>CREA UNA NUOVA TODO</h3>
+
+                    <label for="title">Inserisci il titolo della Todo</label>
+                    <input type="text" name="title" id="title" v-model="todoTitle">
+
+                    <label for="text">Inserisci il testo della Todo</label>
+                    <input type="text" name="text" id="text" v-model="todoText">
+
+                    <label for="priority">Inserisci la priorità della Todo</label>
+                    <input type="text" name="priority" id="priority" v-model="todoPriority">
+
+                    <button>Aggiungi Todo</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-3">
             <div class="card" style="width: 18rem;" v-for="toDo in toDos">
                 <div class="card-body">

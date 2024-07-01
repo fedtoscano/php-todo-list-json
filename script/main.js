@@ -3,6 +3,9 @@ const { createApp } = Vue
     createApp({
     data() {
         return {
+            toDoTitle: '',
+            toDoText:'',
+            toDoPriority: '',
             toDos: [],
         }
     }, 
@@ -24,6 +27,10 @@ const { createApp } = Vue
                     // always executed
                 });  
         },
+
+        putData(){
+            
+        }
     }, 
     created(){
         this.getData()
